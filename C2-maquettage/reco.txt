@@ -1,0 +1,22 @@
+Accessibilité :
+- Contrastes suffisants entre le texte et l'arrière-plan.
+- Navigation possible au clavier.
+- Textes alternatifs pour les images.
+- Structure HTML sémantique.
+- Hiérarchie des titres cohérente.
+- Formulaires avec labels explicites et messages d'erreur compréhensibles.
+- Liens et boutons avec des intitulés explicites.
+- Contenus lisibles et adaptables.
+- Sous-titres et transcriptions pour les contenus audio et vidéo.
+
+Pour aller plus loin nous pouvons également proposer une version high contrast ou également une typographie adaptée pour les problèmes dys (OpenDyslexic)
+
+Éco-conception :
+- Compression et redimensionnement des images au format adapté (WebP).
+- Limitation des animations et effets visuels superflus.
+- Réduction du nombre de scripts.
+- Minification des fichiers CSS et JavaScript.
+- Optimisation du poids des pages et des ressources.
+- Mise en cache des ressources statiques.
+- Suppression du code et des fonctionnalités inutilisés.
+- Choix d'un hébergement performant et adapté.
