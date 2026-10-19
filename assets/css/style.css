@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #0a0c00;
+    font-family: 'Noto Sans', arial, sans-serif;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: 'Unbounded', arial, sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 85px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.primary-button {
+    background-color: #E3FF04;
+    color: #0a0c00;
+    border: none;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    font-weight: 600;
+}
+
+.secondary-button {
+    background-color: #0a0c00;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    font-weight: 600;
+}
+
+.text-button {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.video-button {
+    background-color: white;
+    border: none;
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 30px 50px;
+    flex-wrap: wrap;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 5%);
+}
+
+header .text-button {
+    margin-left: 70px;
+}
+
+.header-home {
+    background-color: transparent;
+    background-color: pink;
+    font-family: 'Unbounded', arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.header-home img {
+    height: 25px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0A0C00;
+}
+
+.navigation-home a.active {
+    color: #28A745;
+}
+
+.main-screen-home {
+    background-color: #0A0C00;
+    color: white;
+}
+
+.agency-contact-home {
+    font-family: 'Unbounded', arial, sans-serif;
+}
+
+.announcement-bar {
+    font-family: 'Unbounded', arial, sans-serif;
+    background-color: #1601AC;
+    color: white;
+    padding: 20px 0;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.skills-home,
+.contact-home {
+    background-color: #E3FF04;
+
+}
+
+.grid-skills-item {
+    background-color: #F6F5F3;
+}
+
+.contact-home-content {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/*mobile*/
+@media screen and (max-width: 768px) {
+    section {
+        padding: 40px 10px;
+    }
+
+  h1 {
+    font-size: 40px;
+  }
+}
