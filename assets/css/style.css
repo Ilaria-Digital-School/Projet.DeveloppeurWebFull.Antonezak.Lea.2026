@@ -67,6 +67,14 @@ section {
     padding: 100px 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .primary-button,
 .secondary-button {
     background-color: #E3FF04;
@@ -125,9 +133,10 @@ header ul {
     gap: 50px;
     flex-wrap: wrap;
     margin: 0;
+    align-items: center;
 }
 
-header {
+#header-home {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -139,17 +148,14 @@ header {
     z-index: 100;
     position: absolute;
     width: 100%;
+    background-color: transparent;
 }
 
 header .text-button {
     margin-left: 70px;
 }
 
-.header-home {
-    background-color: transparent;
-}
-
-.header-home img {
+header img {
     height: 25px;
 }
 
@@ -164,16 +170,44 @@ header a {
     font-size: 14px;
 }
 
-.navigation-home a.active {
-    color: #28A745;
-}
-
 .navbar-toggler {
     border: none;
     outline: none;
     box-shadow: none;
 }
 
+#header-secondary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 50px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    text-transform: uppercase;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+#header-secondary a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0A0C00;
+}
+
+#header-home a.active,
+#header-secondary a.active {
+    color: #28A745;
+}
+
+.button-menu {
+    margin: 0;
+    padding: 20px 40px;
+    font-size: 14px;
+}
 
 /*footer*/
 footer {
@@ -252,7 +286,6 @@ footer ul a:hover {
     border-top: 2px solid black;
 }
 
-
 /*main screen*/
 .main-screen-home {
     background-color: #0A0C00;
@@ -323,6 +356,26 @@ footer ul a:hover {
 
 }
 
+.page-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-banner {
+    margin: 0;
+    padding: 0;
+}
+
+
+.title-banner-full-screen {
+    color: white;
+}
 
 /*services*/
 .grid-our-services-item {
@@ -637,6 +690,44 @@ footer ul a:hover {
 }
 
 
+/*Portfolio*/
+
+.portfolio-banner {
+    background-image: url("../images/projects/portfolio-banner.webp");
+}
+
+.grid-projects-item h2 {
+    text-align: left;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.grid-projects-item img {
+    width: 100%;
+    margin-bottom: 20px;
+    max-height: 430px;
+}
+
+.grid-projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 0px 20px;
+    
+}
+
+.grid-projects {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button-grid-project {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
 /*mobile*/
 @media screen and (max-width: 768px) {
     section {
@@ -671,9 +762,13 @@ footer ul a:hover {
         gap: 30px;
     }
 
-    .header-home {
+    #header-home {
         position: relative;
-        padding: 0 0 0 20px;
+        padding: 10px 0 0 20px;
+    }
+
+    #header-secondary {
+        padding: 10px 0 10px 20px;
     }
 
     .contenu-main-screen-home {
@@ -705,7 +800,10 @@ footer ul a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .award-item {
+    .award-item,
+    .grid-our-services-container,
+    .grid-skills-container,
+    .grid-projects-container {
         grid-template-columns: 1fr;
     }
 
@@ -717,22 +815,17 @@ footer ul a:hover {
         margin: 5px 0;
     }
 
-    .grid-our-services-container {
-        grid-template-columns: 1fr;
-    }
-
     .grid-our-services-item {
         margin: 10px 0px;
-    }
-
-    .grid-skills-container {
-        grid-template-columns: 1fr;
-
     }
 
     .grid-skills-item-img {
         top: -15%;
 
+    }
+
+    .grid-projects-container {
+        margin: 0;
     }
 }
 
@@ -759,6 +852,18 @@ footer ul a:hover {
         z-index: 100;
     }
 
+    .navbar-secondary.show,
+    .navbar-secondary.collapsing {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100vw;
+        background-color: white;
+        padding: 20px 30px;
+        margin-top: 0;
+        z-index: 100;
+    }
+
     .navbar-nav {
         flex-direction: column;
         gap: 15px;
@@ -767,6 +872,11 @@ footer ul a:hover {
     header .text-button {
         margin-left: 0;
     }
+
+    header ul {
+        align-items: baseline;
+    }
+
 }
 
 
