@@ -257,10 +257,13 @@ footer ul a:hover {
     flex: 1;
 }
 
-.form-group input {
+.form-group input,
+.form-group textarea {
     width: 90%;
     border: none;
     outline: none;
+    background-color: transparent;
+    color: #0A0C00;
 }
 
 .button-form button {
@@ -352,7 +355,8 @@ footer ul a:hover {
 }
 
 .skills-home,
-.contact-home {
+.contact-home,
+.contact-form {
     background-color: #E3FF04;
 
 }
@@ -407,31 +411,36 @@ footer ul a:hover {
 }
 
 
-/*skills*/
+/*skills + contact form*/
 
-.grid-skills-container {
+.grid-skills-container,
+.grid-contact-form-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 40px;
 }
 
-.grid-skills-item-img {
+.grid-skills-item-img,
+.grid-contact-form-item-img {
     position: relative;
     top: -20%;
 }
 
-.grid-skills-item-img img {
+.grid-skills-item-img img,
+.grid-contact-form-item-img img {
     max-width: 840px;
     width: 100%;
 }
 
-.grid-skills-item {
+.grid-skills-item,
+.grid-contact-form-item {
     max-width: 640px;
     width: 100%;
     padding: 0 20px;
 }
 
-.grid-skills-item h2 {
+.grid-skills-item h2,
+.grid-contact-form-item h2 {
     text-align: left;
 }
 
@@ -835,6 +844,66 @@ footer ul a:hover {
     margin-bottom: 5px;
 }
 
+
+/*contact*/
+.contact-banner {
+    background-image: url("../images/contact/contact.webp");
+}
+
+.grid-contact-item {
+    background-color: #F6F5F3;
+    padding: 0 40px;
+    margin: 20px 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.grid-contact-item img {
+    margin-bottom: 50px;
+    width: 40px;
+}
+
+.grid-contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contact {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group-contact {
+    margin-bottom: 20px;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #0A0C00;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder  {
+  color: #0A0C00
+}
+
 /*mobile*/
 @media screen and (max-width: 768px) {
     section {
@@ -910,7 +979,9 @@ footer ul a:hover {
     .award-item,
     .grid-our-services-container,
     .grid-skills-container,
-    .grid-projects-container {
+    .grid-projects-container,
+    .grid-contact-form-container,
+    .grid-contact-container {
         grid-template-columns: 1fr;
     }
 
