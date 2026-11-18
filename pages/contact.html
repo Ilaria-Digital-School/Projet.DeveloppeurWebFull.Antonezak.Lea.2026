@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agence Creative</title>
+    <title>Contact Us — Frisk Creative Digital Agency</title>
+    <meta name="description"
+        content="Have a project in mind? Get in touch with Frisk Creative Agency via our contact form, email, or phone to start building your next digital experience.">
+    <link rel="canonical" href="#">
+    <link rel="icon" type="image/webp" href="../assets/images/frisk-favicon.ico">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -21,7 +25,9 @@
 
     <header id="header-secondary">
         <div class="colonne-1">
-            <img src="../assets/images/frisk-noir.webp" alt="Logo Frisk">
+            <a href="../home.html">
+                <img src="../assets/images/frisk-noir.webp" alt="Logo Frisk">
+            </a>
         </div>
         <div class="colonne-2">
             <nav class="navbar navbar-expand-lg">
@@ -37,19 +43,20 @@
                                 <a href="../home.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../pages/about.html">About</a>
+                                <a href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../pages/portfolio.html">Portfolio</a>
+                                <a href="portfolio.html">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a href="">Blog</a>
+                                <a href="#">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="active" href="../pages/contact.html">Contact</a>
+                                <a class="active" href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <button class="secondary-button button-menu" aria-label="Search">Work with us</button>
+                                <a href="contact.html" class="secondary-button button-menu button"
+                                    aria-label="Work with us">Work with us</a>
                             </li>
                         </ul>
                     </div>
@@ -60,46 +67,44 @@
 
     <main>
         <!--Main screen-->
-        <!--Main screen-->
         <section id="toppage" class="section-banner">
             <div class="full-screen page-banner contact-banner">
                 <h1 class="title-banner-full-screen">Contact</h1>
             </div>
         </section>
 
-        <!--What can we do-->
+        <!--our contacts-->
         <section class="contact">
             <div class="grid-contact-container">
                 <div class="grid-contact-item">
-                    <img src="../assets/images/contact/adress.svg" alt="Branding Design">
+                    <img src="../assets/images/contact/adress.svg" alt="address icon">
                     <h3>Headquarters</h3>
                     <p>27 Division St, New York,<br>NY 10002, USA</p>
-                    <button class="text-button" aria-label="View-details">Get direction<i
+                    <button class="text-button button">Get direction<i
                             class="fa-solid fa-arrow-right-long"></i></button>
                 </div>
                 <div class="grid-contact-item">
-                    <img src="../assets/images/contact/email.svg" alt="Website Development">
+                    <img src="../assets/images/contact/email.svg" alt="email icon">
                     <h3>Email Address</h3>
                     <p>frisk.agency@mail.com</p>
                     <br>
-                    <button class="text-button" aria-label="View-details">Send Message<i
-                            class="fa-solid fa-arrow-right-long"></i></button>
+                    <button class="text-button button">Send Message<i class="fa-solid fa-arrow-right-long"></i></button>
                 </div>
                 <div class="grid-contact-item">
-                    <img src="../assets/images/contact/phone.svg" alt="Illustration Modelling">
+                    <img src="../assets/images/contact/phone.svg" alt="phone icon">
                     <h3>Phone Number</h3>
                     <p>+1 800 123 654 987</p>
                     <br>
-                    <button class="text-button" aria-label="View-details">Call anytime<i
-                            class="fa-solid fa-arrow-right-long"></i></button>
+                    <button class="text-button button">Call anytime<i class="fa-solid fa-arrow-right-long"></i></button>
                 </div>
             </div>
         </section>
 
-        <!--Skills-->
+        <!--contact form-->
         <section class="contact-form grid-contact-form-container  full-screen yellow-section">
             <div class="grid-contact-form-item-img">
-                <img src="../assets/images/contact/map.webp" alt="map">
+                <img src="../assets/images/contact/map.webp"
+                    alt="Location map of Frisk agency at 27 Division St, New York">
             </div>
 
             <div class="grid-contact-form-item">
@@ -109,38 +114,56 @@
                 <form class="form-contact" method="post">
                     <div class="form-row">
                         <div class="form-group form-group-contact">
-                            <label for="name"></label>
-                            <input type="text" id="name" placeholder="Full name*" required>
+                            <label for="name" class="sr-only">Full name</label>
+                            <input name="name" type="text" id="name" placeholder="Full name*" required>
                         </div>
                         <div class="form-group form-group-contact">
-                            <label for="email"></label>
-                            <input type="email" id="email" placeholder="Email adress*" required>
+                            <label for="email" class="sr-only">Email address</label>
+                            <input name="email" type="email" id="email" placeholder="Email address*" required>
                         </div>
                     </div>
                     <div class="form-group form-group-contact">
-                        <label for="link"></label>
-                        <input type="text" id="link" placeholder="Website link">
+                        <label for="link" class="sr-only">Website Link</label>
+                        <input name="website" type="text" id="link" placeholder="Website link">
                     </div>
                     <div class="form-group form-group-contact">
-                        <label for="message"></label>
-                        <textarea rows="3" name="message" id="message" placeholder="How can we help you *" required></textarea>
+                        <label for="message" class="sr-only">Your message</label>
+                        <textarea rows="3" name="message" id="message" placeholder="How can we help you *"
+                            required></textarea>
                     </div>
                     <div>
-                        <button class="secondary-button" type="submit">Send message</button>
+                        <button class="secondary-button button" type="submit">Send message</button>
                     </div>
                 </form>
             </div>
         </section>
-        
+
         <!--Barre annonce-->
         <section class="announcement-bar">
-            <div>
-                <span><i class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
-                <span><i class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
-                <span><i class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
-                <span><i class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
-                <span><i class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
+            <div class="announcement-track">
+                <div class="announcement-group">
+                    <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled
+                        Flexibility</span>
+                    <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled
+                        Flexibility</span>
+                    <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled
+                        Flexibility</span>
+                </div>
+                <div class="announcement-group" aria-hidden="true">
+                    <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled
+                        Flexibility</span>
+                    <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled
+                        Flexibility</span>
+                    <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled
+                        Flexibility</span>
+                </div>
             </div>
+        </section>
+
+        <section class="top-page">
+            <a href="#toppage" aria-label="go back to top">
+                <i class="fa-solid fa-arrow-up-long"></i>
+            </a>
         </section>
 
     </main>
@@ -150,11 +173,11 @@
             <div class="footer-info">
                 <div class="footer-container-news">
                     <h3>Get valuable strategy, culture and brand insights straight to your inbox</h3>
-                    <form method="post">
+                    <form id="formNews">
                         <div class="form-news">
                             <div class="form-group">
-                                <label for="email"></label>
-                                <input type="email" id="email" placeholder="Your email">
+                                <label for="newsletter-email" class="sr-only">Email address</label>
+                                <input type="email" id="newsletter-email" name="email" placeholder="Your email">
                             </div>
                             <div class="button-form">
                                 <button type="submit"><i class="fa-solid fa-arrow-right-long"></i></button>
@@ -174,13 +197,13 @@
                             <a href="../pages/portfolio.html">Portfolio</a>
                         </li>
                         <li>
-                            <a href="-">Services</a>
+                            <a href="#">Services</a>
                         </li>
                         <li>
-                            <a href="-">Testimonials</a>
+                            <a href="#">Testimonials</a>
                         </li>
                         <li>
-                            <a href="-">Careers</a>
+                            <a href="#">Careers</a>
                         </li>
                     </ul>
                 </div>
@@ -195,16 +218,16 @@
         <div class="footer-copyright">
             <p class="copyright">Copyright &copy;2026</p>
             <div class="social-media">
-                <a href="https://www.facebook.com" target="_blank">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook">
                     <i class="fa-brands fa-facebook logo-rs"></i>
                 </a>
-                <a href="https://www.instagram.com" target="_blank">
+                <a href="https://www.instagram.com" target="_blank" aria-label="Visit our Instagram">
                     <i class="fa-brands fa-instagram logo-rs"></i>
                 </a>
-                <a href="https://www.x.com" target="_blank">
+                <a href="https://www.x.com" target="_blank" aria-label="Visit our Twitter">
                     <i class="fa-brands fa-x-twitter logo-rs"></i>
                 </a>
-                <a href="https://www.dribbble.com" target="_blank">
+                <a href="https://www.dribbble.com" target="_blank" aria-label="Visit our Dribble">
                     <i class="fa-brands fa-dribbble logo-rs"></i>
                 </a>
             </div>
@@ -213,6 +236,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <script src="../assets/js/services/usersService.js"></script>
+    <script src="../assets/js/users.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agence Creative</title>
+    <title>Project - Name project - Frisk Creative Agency</title>
+    <meta name="description"
+        content="Name project: Explore the custom web development, UI/UX design, and interactive architecture created by Frisk Agency for Decentralized Platform.">
+    <link rel="canonical" href="#">
+    <link rel="icon" type="image/webp" href="../assets/images/frisk-favicon.ico">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -21,7 +25,9 @@
 
     <header id="header-secondary">
         <div class="colonne-1">
+            <a href="../home.html">
             <img src="../assets/images/frisk-noir.webp" alt="Logo Frisk">
+            </a>
         </div>
         <div class="colonne-2">
             <nav class="navbar navbar-expand-lg">
@@ -37,19 +43,20 @@
                                 <a href="../home.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../pages/about.html">About</a>
+                                <a href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="active" href="../pages/portfolio.html">Portfolio</a>
+                                <a class="active" href="portfolio.html">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a href="">Blog</a>
+                                <a href="#">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../pages/contact.html">Contact</a>
+                                <a href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <button class="secondary-button button-menu" aria-label="Search">Work with us</button>
+                                <a href="contact.html" class="secondary-button button-menu" aria-label="Work with us">Work with
+                                    us</a>
                             </li>
                         </ul>
                     </div>
@@ -59,25 +66,26 @@
     </header>
 
     <main>
-        <section class="section-breadcrumb">
+        <section class="section-breadcrumb" id="toppage">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Portfolio</a></li>
+                    <li class="breadcrumb-item"><a href="../home.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="portfolio.html">Portfolio</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Decentralized Platform</li>
                 </ol>
             </nav>
         </section>
 
+        <!-- project caroussel -->
         <section>
             <div id="carouselExampleIndicators" class="carousel slide carousel-project-detail">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                        class="active" aria-current="true" aria-label="project Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
+                        aria-label="project Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                        aria-label="project Slide 3"></button>
                 </div>
                 <div class="carousel-inner carousel-inner-project-detail">
                     <div class="carousel-item active">
@@ -87,6 +95,10 @@
                     <div class="carousel-item">
                         <img src="../assets/images/projects/project-detail-2.webp" class="d-block w-100"
                             alt="Project Decentralized Platform 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/projects/project-detail-3.webp" class="d-block w-100"
+                            alt="Project Decentralized Platform 3">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -102,17 +114,18 @@
             </div>
         </section>
 
+
+        <!-- project content -->
         <section class="project-detail-content">
             <div class="project-detail-text">
                 <h1>Decentralized Platform</h1>
                 <p>BaseCreate is pleased to announce that it has been commissioned by Leighton Asia reposition its
                     brand. We will help Leighton Asia evolve its brand strategy, and will be responsible updating
-                    Leighton Asia’s brand identity, website, and other collaterals.
-
-                    For almost 50 years Leighton Asia, one of the region’s largest and most respected construction
-                    companies, has been progressively building for a better future by leveraging international expertise
-                    with local intelligence. In that time Leighton has delivered some of Asia’s prestigious buildings
-                    and transformational infrastructure projects.</p>
+                    Leighton Asia’s brand identity, website, and other collaterals. For almost 50 years Leighton Asia,
+                    one of the region’s largest and most respected construction companies, has been progressively
+                    building for a better future by leveraging international expertise with local intelligence. In that
+                    time Leighton has delivered some of Asia’s prestigious buildings and transformational infrastructure
+                    projects.</p>
                 <h2>Challenge & Solution</h2>
                 <p>Future, as it seeks to lead the industry in technological innovation and sustainable building
                     practices to deliver long-lasting value for its clients.</p>
@@ -122,7 +135,7 @@
                     with local intelligence. In that time Leighton has delivered some of Asia’s prestigious buildings
                     and transformational infrastructure projects.</p>
             </div>
-            <div class="project-detail-aside">
+            <aside class="project-detail-aside">
                 <div>
                     <p class="project-aside-cat">Category :</p>
                     <p class="project-aside-info">Development</p>
@@ -143,17 +156,17 @@
                     <p class="project-aside-cat">Date :</p>
                     <p class="project-aside-info">October 6, 2023</p>
                 </div>
-            </div>
+            </aside>
         </section>
 
         <section class="previous-next-project">
             <div>
-                <button class="text-button read-more" aria-label="Read More"><i
-                        class="fa-solid fa-arrow-left-long"></i>Previous Post</button>
+                <a href="#" class="text-button read-more button" aria-label="Go to previous post"><i
+                        class="fa-solid fa-arrow-left-long"></i>Previous Post</a>
             </div>
             <div>
-                <button class="text-button read-more" aria-label="Read More">Next post<i
-                        class="fa-solid fa-arrow-right-long"></i></button>
+                <a href="#" class="text-button read-more button" aria-label="Go to next post">Next post<i
+                        class="fa-solid fa-arrow-right-long"></i></a>
             </div>
         </section>
 
@@ -161,17 +174,22 @@
 
         <!--Barre annonce-->
         <section class="announcement-bar">
-            <div>
-                <span><i class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
-                <span><i class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
-                <span><i class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
-                <span><i class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
-                <span><i class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
+            <div class="announcement-track">
+                <div class="announcement-group">
+                     <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
+                     <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
+                     <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
+                </div>
+                <div class="announcement-group" aria-hidden="true">
+                    <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
+                    <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
+                    <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
+                </div>
             </div>
         </section>
 
         <section class="top-page">
-            <a href="#toppage" aria-label="go-back-top">
+            <a href="#toppage" aria-label="go back to top">
                 <i class="fa-solid fa-arrow-up-long"></i>
             </a>
         </section>
@@ -184,11 +202,11 @@
             <div class="footer-info">
                 <div class="footer-container-news">
                     <h3>Get valuable strategy, culture and brand insights straight to your inbox</h3>
-                    <form method="post">
+                    <form id="formNews">
                         <div class="form-news">
                             <div class="form-group">
-                                <label for="email"></label>
-                                <input type="email" id="email" placeholder="Your email">
+                                <label for="newsletter-email" class="sr-only">Email address</label>
+                                <input type="email" id="newsletter-email" name="email" placeholder="Your email">
                             </div>
                             <div class="button-form">
                                 <button type="submit"><i class="fa-solid fa-arrow-right-long"></i></button>
@@ -208,13 +226,13 @@
                             <a href="../pages/portfolio.html">Portfolio</a>
                         </li>
                         <li>
-                            <a href="-">Services</a>
+                            <a href="#">Services</a>
                         </li>
                         <li>
-                            <a href="-">Testimonials</a>
+                            <a href="#">Testimonials</a>
                         </li>
                         <li>
-                            <a href="-">Careers</a>
+                            <a href="#">Careers</a>
                         </li>
                     </ul>
                 </div>
@@ -229,16 +247,16 @@
         <div class="footer-copyright">
             <p class="copyright">Copyright &copy;2026</p>
             <div class="social-media">
-                <a href="https://www.facebook.com" target="_blank">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook">
                     <i class="fa-brands fa-facebook logo-rs"></i>
                 </a>
-                <a href="https://www.instagram.com" target="_blank">
+                <a href="https://www.instagram.com" target="_blank" aria-label="Visit our Instagram">
                     <i class="fa-brands fa-instagram logo-rs"></i>
                 </a>
-                <a href="https://www.x.com" target="_blank">
+                <a href="https://www.x.com" target="_blank" aria-label="Visit our Twitter">
                     <i class="fa-brands fa-x-twitter logo-rs"></i>
                 </a>
-                <a href="https://www.dribbble.com" target="_blank">
+                <a href="https://www.dribbble.com" target="_blank" aria-label="Visit our Dribble">
                     <i class="fa-brands fa-dribbble logo-rs"></i>
                 </a>
             </div>
@@ -247,6 +265,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <script src="../assets/js/services/usersService.js"></script>
+    <script src="../assets/js/users.js"></script>
 </body>
 
 </html>

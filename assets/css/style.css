@@ -4,17 +4,13 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     color: #0a0c00;
     font-family: 'Outfit', arial, sans-serif;
     font-size: 18px;
 }
 
-button {
+.button {
     font-size: 16px;
 }
 
@@ -28,7 +24,8 @@ h3,
 h4,
 h5,
 h6,
-button,
+.stat-number,
+.button,
 header,
 .agency-contact-home,
 .announcement-bar,
@@ -56,7 +53,7 @@ h1 {
     font-size: 85px;
 }
 
-h2 {
+h2, .stat-number {
     font-size: 50px;
 }
 
@@ -78,6 +75,7 @@ a:hover {
 
 .primary-button,
 .secondary-button {
+    display: inline-block;
     background-color: #E3FF04;
     color: #0a0c00;
     border: none;
@@ -88,7 +86,7 @@ a:hover {
 
 .secondary-button {
     background-color: #0a0c00;
-    color: white;
+    color: white !important;
 }
 
 .text-button {
@@ -225,6 +223,7 @@ footer {
 
 }
 
+
 footer ul {
     list-style: none;
     text-align: left;
@@ -241,6 +240,31 @@ footer ul a:hover {
     text-decoration: underline;
 }
 
+.footer-copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+    margin: 40px auto;
+    padding-top: 20px;
+    border-top: 2px solid black;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+/* form */
 .form-news {
     display: flex;
     justify-content: space-between;
@@ -253,6 +277,7 @@ footer ul a:hover {
     border-bottom: 2px solid black;
 }
 
+
 .form-group {
     flex: 1;
 }
@@ -261,10 +286,11 @@ footer ul a:hover {
 .form-group textarea {
     width: 90%;
     border: none;
-    outline: none;
     background-color: transparent;
     color: #0A0C00;
 }
+
+/* buttons */
 
 .button-form button {
     background-color: transparent;
@@ -279,16 +305,6 @@ footer ul a:hover {
     margin: 0 5px;
 }
 
-.footer-copyright {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1280px;
-    width: 100%;
-    margin: 40px auto;
-    padding-top: 20px;
-    border-top: 2px solid black;
-}
 
 /*main screen*/
 .main-screen-home {
@@ -347,6 +363,34 @@ footer ul a:hover {
     padding: 20px 0;
     font-size: 40px;
     font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.announcement-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.announcement-group {
+    display: flex;
+}
+
+.announcement-bar span {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .fa-star-of-life {
@@ -488,6 +532,8 @@ footer ul a:hover {
     height: 100%;
     background-color: #0A0C00;
     border-radius: 4px;
+    width: 0;
+    transition: width 1.5s ease-in-out;
 }
 
 
@@ -726,7 +772,11 @@ footer ul a:hover {
 /*Portfolio*/
 
 .portfolio-banner {
-    background-image: url("../images/projects/portfolio-banner.webp");
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url("../images/projects/portfolio-banner.webp");
+    background-size: cover;
+    background-position: center;
 }
 
 .grid-projects-item h2 {
@@ -863,7 +913,11 @@ footer ul a:hover {
 
 /*contact*/
 .contact-banner {
-    background-image: url("../images/contact/contact.webp");
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url("../images/contact/contact.webp");
+    background-size: cover;
+    background-position: center;
 }
 
 .grid-contact-item {
@@ -901,8 +955,12 @@ footer ul a:hover {
     gap: 20px;
 }
 
+.form-contact {
+    margin-top: 40px;
+}
+
 .form-group-contact {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     align-items: center;
     padding-bottom: 10px;
     border-bottom: 2px solid black;
@@ -928,7 +986,11 @@ footer ul a:hover {
 
 /*about*/
 .about-banner {
-    background-image: url("../images/about/about-banner.webp");
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url("../images/about/about-banner.webp");
+    background-size: cover;
+    background-position: center;
 }
 
 .grid-success-item {
@@ -1009,9 +1071,6 @@ footer ul a:hover {
     padding-top: 0;
 }
 
-/* .yellow-section {
-    height : 724px;
-} */
 
 /*mobile*/
 @media screen and (max-width: 768px) {
@@ -1023,7 +1082,8 @@ footer ul a:hover {
         font-size: 40px;
     }
 
-    h2 {
+    h2,
+    .stat-number {
         font-size: 30px;
     }
 
@@ -1152,44 +1212,10 @@ footer ul a:hover {
     }
 }
 
-@media screen and (max-width: 990px) {
-    .main-screen-home h1 span {
-        margin-left: 0%;
-    }
-}
 
 @media screen and (max-width: 991px) {
     .main-screen-home h1 span {
         margin-left: 0%;
-    }
-
-    .navbar-collapse.show,
-    .navbar-collapse.collapsing {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 100vw;
-        background-color: #0A0C00;
-        padding: 20px 30px;
-        margin-top: 0;
-        z-index: 100;
-    }
-
-    .navbar-secondary.show,
-    .navbar-secondary.collapsing {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 100vw;
-        background-color: white;
-        padding: 20px 30px;
-        margin-top: 0;
-        z-index: 100;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-        gap: 15px;
     }
 
     header .text-button {
@@ -1221,5 +1247,37 @@ footer ul a:hover {
     .grid-contact-form-item-img img,
     .grid-about-item-img img {
         top: -15%;
+    }
+}
+
+
+@media (max-width: 1040px) {
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .navbar-collapse.show,
+    .navbar-collapse.collapsing {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100vw;
+        background-color: #0A0C00;
+        padding: 20px 30px;
+        margin-top: 0;
+        z-index: 100;
+    }
+
+    .navbar-secondary.show,
+    .navbar-secondary.collapsing {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100vw;
+        background-color: white;
+        padding: 20px 30px;
+        margin-top: 0;
+        z-index: 100;
     }
 }

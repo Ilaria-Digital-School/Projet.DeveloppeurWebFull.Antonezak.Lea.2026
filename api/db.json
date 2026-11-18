@@ -1,0 +1,17 @@
+{
+  "optinNewsletter": [
+    {
+      "email": "lea.antonezak@gmail.com",
+      "id": "cT4HUVFxUPA"
+    },
+    {
+      "email": "nom.prenom@gmail.com",
+      "id": "6pVo1ufx4-I"
+    },
+    {
+      "email": "test@g.com",
+      "id": "saJ75b8NDUE"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

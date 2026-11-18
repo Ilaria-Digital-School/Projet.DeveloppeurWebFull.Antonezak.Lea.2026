@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agence Creative</title>
+    <meta name="description" content="Frisk is a creative digital agency specializing in branding, web development, illustration, and digital marketing to build engaging user experiences.">
+    <link rel="canonical" href="#">
+    <link rel="icon" type="image/webp" href="assets/images/frisk-favicon.ico">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -43,14 +46,14 @@
                                 <a href="pages/portfolio.html">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a href="">Blog</a>
+                                <a href="#">Blog</a>
                             </li>
                             <li class="nav-item">
                                 <a href="pages/contact.html">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <button class="text-button search-home" aria-label="Search"><i
-                                        class="fa-solid fa-magnifying-glass"></i>Search</button>
+                                <a href="#" class="text-button search-home button" aria-label="Search"><i
+                                        class="fa-solid fa-magnifying-glass"></i>Search</a>
                             </li>
                         </ul>
                     </div>
@@ -67,8 +70,8 @@
             <div class="contenu-main-screen-home">
                 <div class="agency-home">
                     <h1>We Make<br>Creative Things<br><span>Everyday</span> </h1>
-                    <p>We are digital agency that helps immersive and engaging user experiences that</p>
-                    <button class="primary-button" aria-label="Our Works">View our Works</button>
+                    <p>We are digital agency that helps immersive and engaging user experiences.</p>
+                    <a href="pages/portfolio.html" class="primary-button button" aria-label="View our Works">View our Works</a>
                 </div>
 
                 <div class="agency-contact-home">
@@ -80,12 +83,17 @@
 
         <!--Barre annonce-->
         <section class="announcement-bar">
-            <div>
-                <span><i class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
-                <span><i class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
-                <span><i class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
-                <span><i class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
-                <span><i class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
+            <div class="announcement-track">
+                <div class="announcement-group">
+                     <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
+                     <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
+                     <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
+                </div>
+                <div class="announcement-group" aria-hidden="true">
+                    <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
+                    <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
+                    <span><i aria-hidden="true" class="fa-solid fa-star-of-life"></i>We Give Unparalleled Flexibility</span>
+                </div>
             </div>
         </section>
 
@@ -94,32 +102,32 @@
             <h2 class="h2-full-width">What we can do&nbsp;for our clients</h2>
             <div class="grid-our-services-container">
                 <div class="grid-our-services-item">
-                    <img src="assets/images/skills/icon-branding.svg" alt="Branding Design">
+                    <img src="assets/images/skills/icon-branding.svg" alt="Icon Branding Design">
                     <h3>Branding Design</h3>
                     <p>Branding Design</p>
-                    <button class="text-button" aria-label="View-details">View Details<i
-                            class="fa-solid fa-arrow-right-long"></i></button>
+                    <a href="#" class="text-button button" aria-label="View-details about Branding design">View Details<i
+                            class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
                 <div class="grid-our-services-item">
-                    <img src="assets/images/skills/icon-development.svg" alt="Website Development">
+                    <img src="assets/images/skills/icon-development.svg" alt="Icon Website Development">
                     <h3>Website Development</h3>
                     <p>Website Development</p>
-                    <button class="text-button" aria-label="View-details">View Details<i
-                            class="fa-solid fa-arrow-right-long"></i></button>
+                    <a href="#" class="text-button button" aria-label="View-details about Website devlopment">View Details<i
+                            class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
                 <div class="grid-our-services-item">
-                    <img src="assets/images/skills/icon-illustration.svg" alt="Illustration Modelling">
+                    <img src="assets/images/skills/icon-illustration.svg" alt="Icon Illustration Modelling">
                     <h3>Illustration Modelling</h3>
                     <p>Illustration Modelling</p>
-                    <button class="text-button" aria-label="View-details">View Details<i
-                            class="fa-solid fa-arrow-right-long"></i></button>
+                    <a href="#" class="text-button button" aria-label="View-details about Modelling">View Details<i
+                            class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
                 <div class="grid-our-services-item">
-                    <img src="assets/images/skills/icon-digital-marketing.svg" alt="Digital Marketing">
+                    <img src="assets/images/skills/icon-digital-marketing.svg" alt="Icon Digital Marketing">
                     <h3>Digital Marketing</h3>
                     <p>Digital Marketing</p>
-                    <button class="text-button" aria-label="View-details">View Details<i
-                            class="fa-solid fa-arrow-right-long"></i></button>
+                    <a href="#" class="text-button button" aria-label="View-details about Digital Marketing">View Details<i
+                            class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
         </section>
@@ -142,7 +150,7 @@
                             <span class="progress-value">86&nbsp;%</span>
                         </div>
                         <div class="progress-shape-bar">
-                            <div class="progress-bar" style="width: 86%;"></div>
+                            <div class="progress-bar" data-width="86%"></div>
                         </div>
                     </div>
                     <div class="progress-bar-item">
@@ -151,7 +159,7 @@
                             <span class="progress-value">69&nbsp;%</span>
                         </div>
                         <div class="progress-shape-bar">
-                            <div class="progress-bar" style="width: 69%;"></div>
+                            <div class="progress-bar" data-width="69%"></div>
                         </div>
                     </div>
                     <div class="progress-bar-item">
@@ -160,7 +168,7 @@
                             <span class="progress-value">72&nbsp;%</span>
                         </div>
                         <div class="progress-shape-bar">
-                            <div class="progress-bar" style="width: 72%;"></div>
+                            <div class="progress-bar" data-width="72%"></div>
                         </div>
                     </div>
                     <div class="progress-bar-item">
@@ -169,7 +177,7 @@
                             <span class="progress-value">94&nbsp;%</span>
                         </div>
                         <div class="progress-shape-bar">
-                            <div class="progress-bar" style="width: 94%;"></div>
+                            <div class="progress-bar" data-width="94%"></div>
                         </div>
                     </div>
                 </div>
@@ -182,11 +190,11 @@
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                        class="active" aria-current="true" aria-label="Project slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
+                        aria-label="Project slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                        aria-label="Project slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -231,7 +239,7 @@
                     <div class="award-year">2017</div>
                     <div class="award-info">
                         <h3>New York Design Week</h3>
-                        <p>We bring to life the most complex projects, specialize</p>
+                        <p>We bring to life the most complex projects, specialize.</p>
                     </div>
                     <div class="award-role">MAIN DEVELOPER</div>
                 </div>
@@ -239,7 +247,7 @@
                     <div class="award-year">2019</div>
                     <div class="award-info">
                         <h3>The Blue Design Awards</h3>
-                        <p>We bring to life the most complex projects, specialize</p>
+                        <p>We bring to life the most complex projects, specialize.</p>
                     </div>
                     <div class="award-role">ANIMATOR</div>
                 </div>
@@ -247,7 +255,7 @@
                     <div class="award-year">2019</div>
                     <div class="award-info">
                         <h3>Best Web Flow</h3>
-                        <p>We bring to life the most complex projects, specialize</p>
+                        <p>We bring to life the most complex projects, specialize.</p>
                     </div>
                     <div class="award-role">MAIN DEVELOPER</div>
                 </div>
@@ -255,7 +263,7 @@
                     <div class="award-year">2019</div>
                     <div class="award-info">
                         <h3>Berlin Interactive Award</h3>
-                        <p>We bring to life the most complex projects, specialize</p>
+                        <p>We bring to life the most complex projects, specialize.</p>
                     </div>
                     <div class="award-role">BEST INNOVATIONS</div>
                 </div>
@@ -266,13 +274,11 @@
         <section class="full-screen video-section">
             <div class="conteneur-video">
                 <video poster="assets/images/Homepage/video-homepage.webp">
-                    <source src="" type="">
-                    <track src="sous-titres-fr.vtt" srclang="fr">
-                    </track>
-
+                    <source src="#" type="video/mp4">
+                    <track src="sous-titres-fr.vtt" kind="subtitles" srclang="fr">
                     Votre navigateur ne prend pas en charge la lecture de vidéos.
                 </video>
-                <button class="video-button" aria-label="Play Video">PLAY VIDEO</button>
+                <button class="video-button">PLAY VIDEO</button>
             </div>
         </section>
 
@@ -287,8 +293,8 @@
                     <div class="article-contenu">
                         <p>March 26, 2024 | Branding</p>
                         <h3>Everything you should know about return</h3>
-                        <button class="text-button read-more" aria-label="Read More">READ MORE<i
-                                class="fa-solid fa-arrow-right-long"></i></button>
+                        <a href="#" class="text-button read-more button" aria-label="Read More about Everything you should know about return">READ MORE<i
+                                class="fa-solid fa-arrow-right-long"></i></a>
                     </div>
                 </div>
                 <div class="article-item">
@@ -298,8 +304,8 @@
                     <div class="article-contenu">
                         <p>March 26, 2024 | Branding</p>
                         <h3>6 Big commerce design tips for big results</h3>
-                        <button class="text-button read-more" aria-label="Read More">READ MORE<i
-                                class="fa-solid fa-arrow-right-long"></i></button>
+                        <a href="#" class="text-button read-more button" aria-label="Read More about 6 Big commerce design tips for big results">READ MORE<i
+                                class="fa-solid fa-arrow-right-long"></i></a>
                     </div>
                 </div>
                 <div class="article-item">
@@ -309,14 +315,15 @@
                     <div class="article-contenu">
                         <p>March 26, 2024 | Branding</p>
                         <h3>Four steps to conduct a successful usability</h3>
-                        <button class="text-button read-more" aria-label="Read More">READ MORE<i
-                                class="fa-solid fa-arrow-right-long"></i></button>
+                        <a href="#" class="text-button read-more" aria-label="Read More about Four steps to conduct a successful usability">READ MORE<i
+                                class="fa-solid fa-arrow-right-long"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="clients white-section">
+            <h2 class="sr-only">Our Trusted Clients</h2>
             <div class="client-grid">
                 <div class="logo-item"><img src="assets/images/clients/client-1.svg" alt="Logo client 1"></div>
                 <div class="logo-item"><img src="assets/images/clients/client-2.svg" alt="Logo client 2"></div>
@@ -330,7 +337,7 @@
         </section>
 
         <section class="top-page">
-            <a href="#toppage" aria-label="go-back-top">
+            <a href="#toppage" aria-label="go back to top">
                 <i class="fa-solid fa-arrow-up-long"></i>
             </a>
         </section>
@@ -340,7 +347,7 @@
             <div class="contact-home-content">
                 <h2 class="h2-full-width">Let's Create Something Great</h2>
                 <p>We shift you from today’s reality to tomorrow’s potential, ensuring</p>
-                <button class="secondary-button" aria-label="Contact">Let's talk with us</button>
+                <a href="pages/contact.html" class="secondary-button button" aria-label="Contact us">Let's talk with us</a>
             </div>
         </section>
     </main>
@@ -350,14 +357,14 @@
             <div class="footer-info">
                 <div class="footer-container-news">
                     <h3>Get valuable strategy, culture and brand insights straight to your inbox</h3>
-                    <form method="post">
+                    <form id="formNews">
                         <div class="form-news">
                             <div class="form-group">
-                                <label for="email"></label>
-                                <input type="email" id="email" placeholder="Your email">
+                                <label for="newsletter-email" class="sr-only">Email address</label>
+                                <input type="email" id="newsletter-email" name="email" placeholder="Your email">
                             </div>
                             <div class="button-form">
-                                <button type="submit"><i class="fa-solid fa-arrow-right-long"></i></button>
+                                <button type="submit"  aria-label="Send subscription"><i class="fa-solid fa-arrow-right-long"></i></button>
                             </div>
                         </div>
                     </form>
@@ -374,13 +381,13 @@
                             <a href="pages/portfolio.html">Portfolio</a>
                         </li>
                         <li>
-                            <a href="-">Services</a>
+                            <a href="#">Services</a>
                         </li>
                         <li>
-                            <a href="-">Testimonials</a>
+                            <a href="#">Testimonials</a>
                         </li>
                         <li>
-                            <a href="-">Careers</a>
+                            <a href="#">Careers</a>
                         </li>
                     </ul>
                 </div>
@@ -395,16 +402,16 @@
         <div class="footer-copyright">
             <p class="copyright">Copyright &copy;2026</p>
             <div class="social-media">
-                <a href="https://www.facebook.com" target="_blank">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook">
                     <i class="fa-brands fa-facebook logo-rs"></i>
                 </a>
-                <a href="https://www.instagram.com" target="_blank">
+                <a href="https://www.instagram.com" target="_blank" aria-label="Visit our Instagram">
                     <i class="fa-brands fa-instagram logo-rs"></i>
                 </a>
-                <a href="https://www.x.com" target="_blank">
+                <a href="https://www.x.com" target="_blank" aria-label="Visit our Twitter">
                     <i class="fa-brands fa-x-twitter logo-rs"></i>
                 </a>
-                <a href="https://www.dribbble.com" target="_blank">
+                <a href="https://www.dribbble.com" target="_blank" aria-label="Visit our Dribble">
                     <i class="fa-brands fa-dribbble logo-rs"></i>
                 </a>
             </div>
@@ -413,6 +420,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <script src="../assets/js/services/usersService.js"></script>
+    <script src="../assets/js/users.js"></script>
 </body>
 
 </html>
