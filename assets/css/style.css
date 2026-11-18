@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('../font/OpenDyslexic-Regular.otf') format('woff2');
+}
+
+.dyslexic-mode *:not(i) {
+    font-family: 'OpenDyslexic', sans-serif !important;
+}
+
 body {
     color: #0a0c00;
     font-family: 'Outfit', arial, sans-serif;
@@ -12,6 +21,10 @@ body {
 
 .button {
     font-size: 16px;
+}
+
+.footer-button {
+    font-size: 14px;
 }
 
 a {
@@ -249,6 +262,10 @@ footer ul a:hover {
     margin: 40px auto;
     padding-top: 20px;
     border-top: 2px solid black;
+}
+
+.footer-copyright p {
+    margin-bottom: 0;
 }
 
 .sr-only {
@@ -1083,7 +1100,8 @@ footer ul a:hover {
     }
 
     h2,
-    .stat-number {
+    .stat-number,
+    .grid-projects-item h2 {
         font-size: 30px;
     }
 

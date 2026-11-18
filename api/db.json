@@ -13,5 +13,14 @@
       "id": "saJ75b8NDUE"
     }
   ],
+  "contact": [
+    {
+      "name": "Wyrm & Quill",
+      "email": "wq@gmail.com",
+      "websiteLink": "wyrmandquill.fr",
+      "message": "I'd like to rebrand my website",
+      "id": "H7rzztbFTYQ"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

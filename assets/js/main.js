@@ -35,3 +35,12 @@ var viewscreen = new IntersectionObserver(handleIntersection, {
 allProgressBar.forEach(function(bar) {
     viewscreen.observe(bar);
 });
+
+
+const Dyslexic = document.getElementById("dyslexicButton");
+console.log(Dyslexic);
+if (Dyslexic) {
+    Dyslexic.addEventListener("click", function () {
+       document.body.classList.toggle("dyslexic-mode");
+    });
+}
