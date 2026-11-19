@@ -31,6 +31,7 @@ vers les principales rubriques.
     -   Navigation entre les articles : article précédent / article
         suivant
 
+```text
 Accueil
   │
   ├── Contact
@@ -48,6 +49,7 @@ Accueil
         ├── Article 1
         ├── Article 2
         └── Article ...
+```
 
 ## Navigation et parcours utilisateur
 
